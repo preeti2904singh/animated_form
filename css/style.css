@@ -18,6 +18,7 @@ body{
 .home_screen{
     background: #36ac87;
     height:665px;
+    width: 372px;
     -webkit-transition: all 0.3s ease-out;
 }
 
@@ -111,6 +112,7 @@ body{
 .form_wrap {
     background: white;
     height: 665px;
+    width: 372px;
 }
 
 .input_wrap{
@@ -188,6 +190,7 @@ body{
 .btn-group{
     width: 100%;
     animation-delay: .6s;
+    z-index: 1;
 }
 
 button.btn.dropdown-toggle.btn_dropdown{
@@ -321,27 +324,4 @@ img.icon {
     right: 25px;
     cursor: pointer;
     animation-delay: .5s;
-}
-
-/*.search_wrap, .input_warp, .info_box{*/
-    /*bottom: 100px;*/
-    /*opacity: 0;*/
-    /*visibility: hidden;*/
-/*}*/
-
-/*.form_wrap.active .search_wrap, .form_wrap.active .input_wrap, .form_wrap.active .info_box{*/
-    /*bottom: 0;*/
-    /*opacity: 1;*/
-    /*visibility: visible;*/
-    /*-webkit-transition: .3s ease;*/
-    /*transition: .3s ease;*/
-
-/*}*/
-
-.hover {
-    -webkit-transform: rotate(170deg);
-    -moz-transform: rotate(170deg);
-    transform: rotate(170deg);
-    opacity: 1;
-
 }

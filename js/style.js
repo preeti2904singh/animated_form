@@ -4,9 +4,8 @@ $(document).ready(function(){
       $('.form_wrap').show();
   });
   $('.close_btn').on('click', function () {
-    $('.home_screen').show('slow');
+    $('.home_screen').show();
     $('.form_wrap').hide();
-    $('.search_input').addClass('animated fadeInUp').removeClass('animated fadeInDown');
   });
   $(document).on('input', '.textArea', function () {
     if ($('.textArea').val()) {
