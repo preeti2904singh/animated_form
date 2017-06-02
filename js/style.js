@@ -28,12 +28,10 @@ $(document).ready(function(){
 
   $('.input_txt').on("focus",function(e){
     $(this).next('.placeholderDiv').css("visibility","hidden");
-    $(this).next('.placeholderLoginDiv').css("visibility","hidden");
   });
   $('.input_txt').on("blur",function(e){
     if($(this).val().length == 0)
       $(this).next('.placeholderDiv').css("visibility","visible");
-      $(this).next('.placeholderLoginDiv').css("visibility","visible");
   });
 
 });
