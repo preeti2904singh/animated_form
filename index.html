@@ -4,49 +4,56 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title Page</title>
+    <title>Animated Form Demo</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 <div class="flex_container">
-    <div class="home_screen">
-        <a href="#" class="dots">
-            <div class="dot"></div>
-        </a>
+    <div class="dots animated slideInDown">
+        <label for="toggle"></label>
+        <input id="toggle" type="checkbox"/>
+        <div class="dot"></div>
     </div>
+    <div class="home_screen"></div>
     <div class="form_wrap" style="display: none;">
         <div class="search_wrap">
             <input type="text" placeholder="Search" class="search_input animated slideInDown">
-            <div class="close_btn animated fadeInDown">X</div>
+            <div class="close_btn animated fadeInDown"></div>
         </div>
         <div class="input_wrap">
-            <div class="textAreaWrap animated fadeInDown">
-                <textarea class="textArea"></textarea>
-                <div class="placeholderDiv">What is<br>Pre-Activism?</div>
+            <div class="paraTxt animated fadeInDown">
+                <input type="text" placeholder="" class="input_txt input_style animated fadeInDown">
+                <span class="placeholderDiv">What is<br>Pre-Activism?</span>
             </div>
-            <div class="btn-group animated fadeInDown">
-                <button class="btn dropdown-toggle btn_dropdown" name="recordinput" data-toggle="dropdown">
-                    <span>Issues<br> that matter</span>
+            <div class="dropdown_list animated fadeInDown">
+                <div class="select_dropdown">
+                    <input type="text" placeholder="" class="head_txt input_style animated fadeInDown"  readonly>
+                    <span class="placeholder">Issues<br> that matter</span>
                     <span class="arrow_down"><img src="images/arrow_down.svg" style="width: 20px;" alt=""></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#"><span><img src="images/arrow_down.svg" style="width: 20px;" class="menu_arrow" alt=""></span><span class="dropdown_txt">Women's Saftey</span>
-                        <hr class="custome_hr"></a></li>
-                    <li><a href="#"><span><img src="images/arrow_down.svg" style="width: 20px;" class="menu_arrow" alt=""></span><span class="dropdown_txt">Farmer Suicide</span><hr class="custome_hr"></a></li>
-                    <li><a href="#"><span><img src="images/arrow_down.svg" style="width: 20px;" class="menu_arrow" alt=""></span><span class="dropdown_txt">Sports</span></a></li>
+                </div>
+                <ul class="dropdown-menu" style="display: none;">
+                    <li data-value="Women's Saftey"><a href="#">
+                        <span><img src="images/arrow_down.svg" style="width: 20px;" class="menu_arrow" alt=""></span>
+                        <span class="dropdown_txt">Women's Saftey</span>
+                        <hr class="custome_hr">
+                    </a></li>
+                    <li data-value="Farmer Suicide"><a href="#">
+                        <span><img src="images/arrow_down.svg" style="width: 20px;" class="menu_arrow" alt=""></span>
+                        <span class="dropdown_txt">Farmer Suicide</span><hr class="custome_hr">
+                    </a></li>
+                    <li data-value="Sports"><a href="#">
+                        <span><img src="images/arrow_down.svg" style="width: 20px;" class="menu_arrow" alt=""></span>
+                        <span class="dropdown_txt">Sports</span>
+                    </a></li>
                     <hr class="fullWidth_hr">
                 </ul>
             </div>
-            <input type="text" placeholder="Login / Sign Up" class="input_style animated fadeInDown">
+            <div class="paraTxt animated fadeInDown">
+                <input type="text" placeholder="" class="input_txt input_style animated fadeInDown">
+                <span class="placeholderLoginDiv">Login / Sign Up</span>
+            </div>
         </div>
         <div class="info_box">
             <div class="box_wrap animated fadeInUp">
@@ -62,10 +69,8 @@
 </div>
 
 <!-- jQuery -->
-<script src="//code.jquery.com/jquery.js"></script>
-<!-- Bootstrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="js/style.js"></script>
 </body>
 </html>
