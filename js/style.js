@@ -3,13 +3,13 @@ $(document).ready(function(){
     if(this.checked){
       $('.home_screen').hide();
       $('.form_wrap').show();
-      $('.dots').css({"top": "36px", "right": "48px"}).addClass('animated fadeInDown');
+      $('.dots').animate({"top": "36px"}).addClass('animated fadeInDown');
       $('.dropdown-menu li a').hidden();
     }
     else{
       $('.home_screen').show();
       $('.form_wrap').hide();
-      $('.dots').css({"top": "0px", "right": "20px"}).addClass('animated fadeInUp');
+      $('.dots').css({"top": "0px"}).addClass('animated fadeInUp');
       $('.dropdown-menu li a').hidden();
     }
   });

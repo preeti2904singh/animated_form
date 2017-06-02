@@ -69,7 +69,7 @@ span.placeholder, .placeholderDiv, .placeholderLoginDiv, .input_style[type="text
 }
 
 .dots {
-    right: 20px;
+    right: 48px;
     z-index: 9;
 }
 
@@ -81,10 +81,10 @@ span.placeholder, .placeholderDiv, .placeholderLoginDiv, .input_style[type="text
 
 .dots label {
     display: inline-block;
-    width: 15px;
-    height: 22px;
-    top: 38px;
-    left: -10px;
+    width: 50px;
+    height: 50px;
+    top: 28px;
+    left: -28px;
     z-index: 999;
 }
 
@@ -100,7 +100,7 @@ span.placeholder, .placeholderDiv, .placeholderLoginDiv, .input_style[type="text
 
 .dot {
     top: 50px;
-    right: 0;
+    left: -4px;
 }
 
 .dot:before,
@@ -133,6 +133,7 @@ span.placeholder, .placeholderDiv, .placeholderLoginDiv, .input_style[type="text
     background: black;
     animation-name: fadeInDown;
     animation-delay: .5s;
+    height: 3px;
 }
 
 .dots input[type=checkbox]:checked ~ .dot:after {
@@ -142,6 +143,7 @@ span.placeholder, .placeholderDiv, .placeholderLoginDiv, .input_style[type="text
     background: black;
     animation-name: fadeInDown;
     animation-delay: .5s;
+    height: 3px;
 }
 
 .search-active {
